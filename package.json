@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "pre-deploy" : "npm run build",
-    "deploy" : "gh-pages -d"
+    "deploy" : "gh-pages"
   },
   "dependencies": {
     "aos": "^2.3.4",
