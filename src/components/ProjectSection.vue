@@ -29,9 +29,9 @@
 <script setup>
 
 import { ref, computed } from 'vue';
-import BackendImage from '@/assets/Backend_endpoint.png'
+import BackendImage from '@/assets/backend.png'
 import FrontendImage from '@/assets/frontend_tailwind.png'
-import FrontendApiImage from '@/assets/frontend_API.png'
+import FrontendApiImage from '@/assets/api.png'
 
     const projects = ref([
         {
