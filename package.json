@@ -1,0 +1,28 @@
+{
+  "name": "my_portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "homepage": "https://github.com/TamannaAnand/TamannasPortfolio.git",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "pre-deploy" : "npm run build",
+    "deploy" : "gh-pages -d src"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "axios": "^1.7.9",
+    "vue": "^3.5.13",
+    "vue3-carousel": "^0.9.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "autoprefixer": "^10.4.20",
+    "gh-pages": "^6.2.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "vite": "^6.0.1"
+  }
+}
