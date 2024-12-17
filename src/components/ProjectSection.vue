@@ -29,12 +29,15 @@
 <script setup>
 
 import { ref, computed } from 'vue';
+import BackendImage from '@/assets/Backend_endpoint.png'
+import FrontendImage from '@/assets/frontend_tailwind.png'
+import FrontendApiImage from '@/assets/frontend_API.png'
 
     const projects = ref([
         {
             id: 1,
             category: 'Back-end',
-            img:'src/assets/Backend_endpoint.png',
+            img: BackendImage,
             title:'Chinook App Backend Enhancement',
             description:"I developed the backend for the Chinook App, focusing on Express.js endpoints to manage artists, albums, and tracks. I integrated new database features and ensured data integrity through validation schemas, demonstrating my ability to build scalable backend systems that seamlessly integrate with a pre-existing frontend.",
             technologies:['Express.js', 'Node.js', 'Javascript', 'SQL'],
@@ -44,7 +47,7 @@ import { ref, computed } from 'vue';
         {
             id: 2,
             category: 'front-end',
-            img:'src/assets/frontend_tailwind.png',
+            img: FrontendImage,
             title:'Interactive Website built with Advanced CSS Tools',
             description:'I created a responsive single-page website for Acme Creatives using Tailwind CSS, featuring sections for services, portfolio, and testimonials. The site includes an interactive HTML Canvas animation to enhance visual appeal.',
             technologies:['Tailwind CSS', 'HTML Canvas animation'],
@@ -54,7 +57,7 @@ import { ref, computed } from 'vue';
         {
             id: 3,
             category: 'front-end',
-            img:'src/assets/frontend_API.png',
+            img: FrontendApiImage,
             title:'3-in-a-Row Puzzle Game',
             description:"I developed a 3-in-a-row puzzle game using pure JavaScript and the DOM, retrieving puzzle data from a remote API. The game allows users to interact with the grid, change square states, and check the puzzle's status. Features include error display for incorrect squares and an innovative game-play enhancement, all implemented with unobtrusive JavaScript.",
             technologies:['HTML DOM', 'Javascript', 'API'],
