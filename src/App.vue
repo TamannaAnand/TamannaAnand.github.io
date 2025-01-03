@@ -7,7 +7,7 @@
   <EducationSection />
   <ExperienceSection />
   <ProjectSection />
-  <GoalsSection />
+  <!-- <GoalsSection /> -->
   <ContactSection />
   <FooterSection />
   <BackToTop />
@@ -23,7 +23,7 @@ const AboutSection = defineAsyncComponent(()=>import('@/components/AboutSection.
 const EducationSection = defineAsyncComponent(()=>import('@/components/EducationSection.vue'));
 const ExperienceSection = defineAsyncComponent(()=>import('@/components/ExperienceSection.vue'));
 const ProjectSection = defineAsyncComponent(()=>import('@/components/ProjectSection.vue'));
-const GoalsSection = defineAsyncComponent(()=>import('@/components/GoalsSection.vue'));
+// const GoalsSection = defineAsyncComponent(()=>import('@/components/GoalsSection.vue'));
 const ContactSection = defineAsyncComponent(()=>import('@/components/ContactSection.vue'));
 const FooterSection = defineAsyncComponent(()=>import('@/components/FooterSection.vue'));
 const BackToTop = defineAsyncComponent(()=>import('@/components/BackToTop.vue'));

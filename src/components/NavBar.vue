@@ -42,7 +42,7 @@ const menu = ref([
     { name: 'Education', href: '#education' },
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
-    { name: 'Goals', href: '#goals' },
+    // { name: 'Goals', href: '#goals' },
     { name: 'Contact', href: '#contact' }
 ]);
 
