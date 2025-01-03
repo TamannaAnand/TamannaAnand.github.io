@@ -40,6 +40,8 @@ import { ref, computed } from 'vue';
 import BackendImage from '@/assets/backend.png'
 import FrontendImage from '@/assets/frontend_tailwind.png'
 import FrontendApiImage from '@/assets/api.png'
+import PlatformImage from '@/assets/PhaserGame.png'
+import firstPortfolioImg from '@/assets/staticPortfolio.png'
 
     const projects = ref([
         {
@@ -71,6 +73,26 @@ import FrontendApiImage from '@/assets/api.png'
             technologies:['HTML DOM', 'Javascript', 'API'],
             gitURL:'https://github.com/TamannaAnand/3InARowPuzzleGame',
             webURL:'https://tamannaanand.github.io/3InARowPuzzleGame/'
+        },
+        {
+            id: 4,
+            category: 'front-end',
+            img: PlatformImage,
+            title:'2D-Platformer Game',
+            description:"A 2D platformer game built with Phaser.js, featuring dynamic level progression, physics-based gameplay, and interactive UI elements. Players collect stars, avoid bombs, and progress through levels, with real-time score updates and a custom 'Game Over' screen. This project highlights my skills in JavaScript and game development.",
+            technologies:['HTML DOM', 'Phaser.js', 'Javascript'],
+            gitURL:'https://github.com/TamannaAnand/PhaserGame',
+            webURL:'https://tamannaanand.github.io/PhaserGame/'
+        },
+        {
+            id: 5,
+            category: 'front-end',
+            img: firstPortfolioImg,
+            title:'First Portfolio',
+            description:"My first portfolio was a simple, multi-page site built with HTML and CSS. It had a grid layout for desktop and a single-column layout for mobile, making it responsive. It was a fun way to showcase my early web development projects and get a feel for building websites.",
+            technologies:['HTML', 'CSS'],
+            gitURL:'https://github.com/TamannaAnand/Static-Portfolio',
+            webURL:'https://tamportfolio.netlify.app/'
         }
     ])
 
