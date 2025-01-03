@@ -6,8 +6,16 @@
         </div>
             <ul class="px-4 sm:py-16 xl:pr-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3" data-aos="fade-right">
                 <div v-for="project in filteredProjects" :key="project.id">
-                    <div class="h-52 md:h-[24rem] rounded-t-xl relative group" :style="{backgroundImage:'url('+project.img+')', backgroundSize: 'cover'}">
+                    <div class="h-52 md:h-[24rem] rounded-t-xl relative group" :style="{backgroundImage:'url('+project.img+')', backgroundSize: 'cover'}"
+                    >
                     <div id="border-projects" class="overlay items-center justify-center absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 transition-all duration-500">
+                        <!-- links to github and website -->
+                         <a target="_blank" class="h-14 w-14 mr-2 border-2 relative rounded-full border-[#AB7BE] hover:border-white group/link" :href="project.webURL">
+                            <img width="64" height="64" src="https://img.icons8.com/f7f7f7/windows/64/internet.png" alt="internet"/>
+                         </a>
+                         <a target="_blank" class="h-14 w-14 mr-2 border-2 relative rounded-full border-[#AB7BE] hover:border-white group/link" :href="project.gitURL">
+                            <img width="64" height="64" src="https://img.icons8.com/f7f7f7/glyph-neue/64/github.png" alt="github"/>
+                         </a>
                     </div>
                 </div>
             <div class="text-white rounded-b-xl mt-0 bg-[#1d1e2f] shadow-lg border border-[#1d1e2f] py-6 px-4 ">
