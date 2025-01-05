@@ -15,16 +15,7 @@
                             <p>anandtamanna9@gmail.com</p>
                         </div>
                     </div>
-                    <div class="flex mb-10 items-center">
-                        <div class="p-2" style="background: #1d1e2f; width: 50px; height: 46px; display: flex; justify-content: center; border-radius: 50%; overflow: hidden; border: 1px solid #111a3e; backdrop-filter: blur(9px); -webkit-backdrop-filter: blur(9px);"
-                        >
-                            <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="phone" class="w-6">
-                        </div>
-                        <div class="ml-5 text-white">
-                            <h4>Phone</h4>
-                            <p>+19022927877</p>
-                        </div>
-                    </div>
+                    <!-- phone number removed -->
                     <div class="flex mb-10 items-center">
                         <div class="p-2" style="background: #1d1e2f; width: 50px; height: 46px; display: flex; justify-content: center; border-radius: 50%; overflow: hidden; border: 1px solid #111a3e; backdrop-filter: blur(9px); -webkit-backdrop-filter: blur(9px);"
                         >
