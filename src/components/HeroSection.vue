@@ -84,7 +84,7 @@
                   <div class="download-loader text-white hidden"></div>
                 </div>
                 <a
-                  href="resumePath"
+                  :href="resumePath"
                   download="TamannaAnand_Resume_2025.pdf"
                   class="pl-2 text-primary"
                   >Download resume</a
