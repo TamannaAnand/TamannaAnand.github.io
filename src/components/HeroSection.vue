@@ -84,7 +84,7 @@
                   <div class="download-loader text-white hidden"></div>
                 </div>
                 <a
-                  href="/src/assets/TamannaAnand_Resume_2025.pdf"
+                  href="resumePath"
                   download="TamannaAnand_Resume_2025.pdf"
                   class="pl-2 text-primary"
                   >Download resume</a
@@ -122,4 +122,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
+
+import resumePath from '@/assets/TamannaAnand_Resume_2025.pdf';
+
 </script>
