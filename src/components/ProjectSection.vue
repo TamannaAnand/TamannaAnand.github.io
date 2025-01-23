@@ -77,7 +77,7 @@
 </template>
 <script setup>
 import { ref, computed } from "vue";
-import SafeCampusImage from '@/assests/SafecampusImg.png'
+import SafeCampusImage from '@/assets/SafecampusImg.png'
 import BackendImage from "@/assets/backend.png";
 import FrontendImage from "@/assets/frontend_tailwind.png";
 import FrontendApiImage from "@/assets/api.png";
