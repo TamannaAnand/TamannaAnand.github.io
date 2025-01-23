@@ -92,7 +92,7 @@ const projects = ref([
     title: "SafeCampus Dashboard",
     description:
       "SafeCampus is a web-based application that simplifies campus safety inspections by offering real-time visibility into task completion through an intuitive dashboard. Principals can track inspection progress, identify incomplete tasks, and streamline the inspection process, with plans for future enhancements like real-time updates and multi-campus integration.",
-    technologies: ["Express.js", "Node.js", "Javascript", "SQL"],
+    technologies: ["Express.js", "Node.js", "SQLite", "Bootstrap"],
     gitURL: "https://github.com/TamannaAnand/HackathonProjectRepo",
     webURL: "https://safetysystem-testdeploy.onrender.com/",
   },
