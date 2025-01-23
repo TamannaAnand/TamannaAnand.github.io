@@ -52,7 +52,7 @@ import firstPortfolioImg from '@/assets/staticPortfolio.png'
             description:"I developed the backend for the Chinook App, focusing on Express.js endpoints to manage artists, albums, and tracks. I integrated new database features and ensured data integrity through validation schemas, demonstrating my ability to build scalable backend systems that seamlessly integrate with a pre-existing frontend.",
             technologies:['Express.js', 'Node.js', 'Javascript', 'SQL'],
             gitURL:'https://github.com/TamannaAnand/ChinookApp',
-            webURL:'https://chinookapp-5skd.onrender.com/'
+            webURL:''
         },
         {
             id: 2,
