@@ -1,44 +1,49 @@
 <template>
     <section class="text-white mt-18" id="experience">
+        <!-- Background Decorative Elements -->
         <div class="absolute right-0 top-[110rem] h-full w-full justify-end">
             <span class="flex opacity-20">
                 <span class="w-16 h-32 rounded-l-full flex bg-primary blur-2xl"></span>
                 <span class="w-16 h-32 rounded-r-full flex bg-[#f88fc2] blur-2xl mt-14"></span>
             </span>
         </div>
-        <div class="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 xl:px-16">
-            <div data-aos="flip-right" class="mt-4 md:mt-0 text-center flex flex-col z-10 h-full w-[80%]">
-                <h2 class="text-4xl font-bold text-white text-center mb-4">
+
+        <div class="md:grid md:grid-cols-2 gap-8 items-center md:py-12 px-6 xl:gap-16 xl:px-16">
+            <!-- Tools & Technologies -->
+            <div data-aos="flip-right" class="text-center flex flex-col z-10 h-full w-full md:w-[80%]">
+                <h2 class="text-4xl font-bold text-white mb-6">
                     Tools 
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">&</span> 
                     Technologies
                 </h2>
 
                 <!-- Skills Grid -->
-                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-8 text-center">
-                    <div v-for="skill in skills" :key="skill.id" class="flex flex-col items-center">
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-6">
+                    <div v-for="skill in skills" :key="skill.id" class="flex flex-col items-center transition-all duration-300 hover:scale-105">
                         <img :src="skill.img" :alt="skill.name" class="w-16 h-16">
-                        <p class="mt-2 text-sm">{{ skill.name }}</p>
+                        <p class="mt-2 text-lg">{{ skill.name }}</p>
                     </div>
                 </div>
             </div>
 
-            <div data-aos="flip-left">
-                <h2 class="text-4xl font-bold text-white text-left mb-8 md:text-center md:mt-0 mt-8">
+            <!-- Experiences Section -->
+            <div data-aos="flip-right" >
+                <h2 class="text-4xl font-bold text-white mb-8 lg:mb-12 text-center mt-4">
                     My Experiences
                 </h2>
-                <div class="space-y-8 py-8">
+
+                <div class="space-y-6">
                     <div v-for="element in experiences" :key="element.id"
-                        class="flex items-center rounded-xl p-4 bg-[#1d1e2f] shadow-lg border border-[#1d1e2f]">
-                        <div class="w-1/4">
-                            <img src="https://img.icons8.com/ios-filled/100/ffffff/lawyer.png" alt="icon">
+                        class="flex items-center rounded-xl p-5 bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary transition-all duration-300">
+                        <div class="w-1/5 flex justify-center">
+                            <img src="https://img.icons8.com/ios-filled/100/ffffff/lawyer.png" alt="icon" class="w-12 h-12">
                         </div>
-                        <div class="w-3/4 pl-4">
+                        <div class="w-4/5 pl-4">
                             <h3 class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                                 {{ element.name }}
                             </h3>
-                            <p class="text-white">{{ element.business }}</p>
-                            <p class="text-white">{{ element.year }}</p>
+                            <p class="text-white text-lg">{{ element.business }}</p>
+                            <p class="text-gray-400">{{ element.year }}</p>
                         </div>
                     </div>
                 </div>

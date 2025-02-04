@@ -1,7 +1,7 @@
 <template>
     <section class="text-white mt-20" id="about">
         <div class="px-4 xl:pl-16">
-            <h2 class="text-4xl font-bold mt-4 md:text-center">
+            <h2 class="text-4xl font-bold mt-4 text-center">
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
                     About
                 </span> 
@@ -10,7 +10,7 @@
         </div>
         <div class="py-8 px-4 sm:py-16 grid grid-cols-1 gap-8 sm:grid-cols-2 md:gap-10 lg:gap-16 lg:grid-cols-3">
             <div v-for="item in about" :key="item.id" data-aos="fade-up"
-                class="px-6 py-8 rounded-xl bg-[#222336] shadow-xl border border-[#292a3a] hover:scale-105 transition-transform duration-300"
+                 class="px-6 py-8 rounded-xl bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary hover:shadow-xl transition-all duration-300"
             >
                 <div class="flex justify-center">
                     <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary p-3">

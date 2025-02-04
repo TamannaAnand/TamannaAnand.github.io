@@ -1,8 +1,8 @@
 <template>
-  <section class="relative w-full md:h-[80vh] flex items-center" data-aos="zoom-in-up">
+  <section class="relative w-full h-[80vh] flex items-center" data-aos="zoom-in-up">
     <!-- Gradient Background Effect -->
     <div class="absolute top-0 inset-x-0 h-64 flex items-start">
-      <div class="h-24 w-2/3 bg-gradient-to-br from-[#570cac] blur-2xl invisible opacity-40"></div>
+      <div class="h-24 w-2/3 bg-gradient-to-br from-[#570cac] blur-2xl opacity-40"></div>
       <div class="h-20 w-3/5 bg-gradient-to-r from-[#670ccf] opacity-40 blur-2xl"></div>
     </div>
 
@@ -23,11 +23,11 @@
           
           <!-- Buttons -->
           <div class="flex items-center gap-4 pt-8 flex-col sm:flex-row">
-            <a href="#contact" class="px-6 py-3 bg-primary text-white rounded-full hover:scale-105 transition transform duration-200">
+            <a href="#contact" class="px-6 py-3 bg-primary text-white rounded-full hover:scale-105 transition-transform duration-200">
               Contact Me
             </a>
             <a :href="resumePath" download="TamannaAnand_Resume.pdf" 
-              class="border border-primary px-6 py-3 text-primary rounded-full flex items-center hover:scale-105 transition transform duration-200">
+              class="border border-primary px-6 py-3 text-primary rounded-full flex items-center hover:scale-105 transition-transform duration-200">
               <svg class="w-5 h-5 mr-2 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v12m0 0l-4-4m4 4l4-4M4 16v4h16v-4" />
               </svg>
@@ -36,13 +36,12 @@
           </div>
         </div>
 
-        <!-- Right Image Section (Hidden on Mobile) -->
+        <!-- Right Image Section -->
         <div class="lg:h-full md:flex hidden sm:block">
           <div class="flex w-full h-96 items-center relative">
             <div class="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)] bg-gradient-to-tr opacity-25 from-[#570cac] to-primary blur-2xl"></div>
             <div class="absolute h-full z-10 p-2 -translate-y-1/2 top-1/2 right-10 rounded-full shadow-lg border border-primary">
-              <img src="@/assets/undraw_profile_pic_re_iwgo.svg" alt="profile-img"
-                class="w-full h-full rounded-full object-cover" />
+              <img src="@/assets/undraw_profile_pic_re_iwgo.svg" alt="profile-img" class="w-full h-full rounded-full object-cover" />
             </div>
           </div>
         </div>

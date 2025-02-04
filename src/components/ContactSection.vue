@@ -1,9 +1,9 @@
 <template>
     <section class="text-white mt-20" id="contact">
-        <h2 class="text-4xl font-bold text-white text-left mb-4 px-4 xl:pl-16">Let's Connect</h2>
+        <h2 class="text-4xl font-bold text-white md:text-left text-center mb-4 px-4 xl:pl-16">Let's Connect</h2>
         <div class="grid md:grid-cols-2 gap-4 relative px-4 xl:px-16 mt-8" data-aos="zoom-in-up">
             <div>
-                <p class="text-[#adb7be]">I’d love to hear from you! Whether you have a project in mind, want to collaborate, or just feel like chatting about tech, design, or anything creative, I’m all ears. Drop me a message, and let’s make something awesome together! 🚀</p>
+                <p class="text-[#adb7be] md:text-left text-center">I’d love to hear from you! Whether you have a project in mind, want to collaborate, or just feel like chatting about tech, design, or anything creative, I’m all ears. Drop me a message, and let’s make something awesome together! 🚀</p>
                 <div class="col-lg-4 col-md-4 mb-lg-0 mt-5">
                     <div class="flex mb-10 items-center">
                         <div class="p-2" style="background: #1d1e2f; width: 50px; height: 46px; display: flex; justify-content: center; border-radius: 50%; overflow: hidden; border: 1px solid #111a3e; backdrop-filter: blur(9px); -webkit-backdrop-filter: blur(9px);"
