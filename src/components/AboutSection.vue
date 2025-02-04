@@ -1,27 +1,31 @@
 <template>
     <section class="text-white mt-20" id="about">
         <div class="px-4 xl:pl-16">
-            <h2 class="text-4xl font-bold mb-4"><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">About</span> Me</h2>
+            <h2 class="text-4xl font-bold mt-4 md:text-center">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+                    About
+                </span> 
+                Me
+            </h2>
         </div>
-        <div class="py-8 px-4 sm:py-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3">
+        <div class="py-8 px-4 sm:py-16 grid grid-cols-1 gap-8 sm:grid-cols-2 md:gap-10 lg:gap-16 lg:grid-cols-3">
             <div v-for="item in about" :key="item.id" data-aos="fade-up"
-            class="px-8 py-12 rounded-xl bg-[#1d1e2f] shadow-lg border border-[#1d1e2f]"
+                class="px-6 py-8 rounded-xl bg-[#222336] shadow-xl border border-[#292a3a] hover:scale-105 transition-transform duration-300"
             >
-                <div class="mx-auto h-24 text-center xl:h-28 xl:w-28">
-                    <div>
-                        <img :src="item.icon" alt="item-icon">
+                <div class="flex justify-center">
+                    <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary p-3">
+                        <img :src="item.icon" alt="item-icon" class="w-16 h-16">
                     </div>
                 </div>
-                <div class="text-center">
-                    <h3 class="pt-8 text-lg font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary lg:text-xl">
+                <div class="text-center mt-6">
+                    <h3 class="text-lg font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary lg:text-xl">
                         {{ item.name }}
                     </h3>
-                    <p class="text-gray pt-4 text-sm group-hover:text-white md:text-base">
+                    <p class="text-gray-300 mt-4 text-lg md:text-lg leading-relaxed">
                         {{ item.description }}
                     </p>
                 </div>
             </div>
-
         </div>
     </section>
 </template>
