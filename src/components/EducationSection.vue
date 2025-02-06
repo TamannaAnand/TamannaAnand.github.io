@@ -10,7 +10,7 @@
                 </h2>
                 <div class="space-y-8 py-8">
                     <div v-for="element in education" :key="element.id"
-                    class="flex items-center rounded-xl p-5 bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary transition-all duration-300">
+                    class="flex items-center rounded-xl p-5 bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary transition-all duration-300 !important">
                         <div class="w-1/4">
                             <img src="https://img.icons8.com/ios-glyphs/60/ffffff/graduation-cap--v1.png" alt="graduation-cap">
                         </div>
