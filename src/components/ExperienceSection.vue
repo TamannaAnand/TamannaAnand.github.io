@@ -18,6 +18,7 @@
                 </h2>
 
                 <!-- Skills Grid -->
+                 <!-- removed progress bars and added imgs for each technology. Included hover animation as well -->
                 <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-6">
                     <div v-for="skill in skills" :key="skill.id" class="flex flex-col items-center transition-all duration-300 hover:scale-105">
                         <img :src="skill.img" :alt="skill.name" class="w-16 h-16">
