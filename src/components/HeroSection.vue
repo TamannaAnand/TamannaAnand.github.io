@@ -37,6 +37,7 @@
         </div>
 
         <!-- Right Image Section -->
+         <!-- updated UI to hide the profile image when on mobile to make the layout better -->
         <div class="lg:h-full md:flex hidden sm:block">
           <div class="flex w-full h-96 items-center relative">
             <div class="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)] bg-gradient-to-tr opacity-25 from-[#570cac] to-primary blur-2xl"></div>
@@ -54,6 +55,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
+//fixed download button on mobile by importing the asset 
 import resumePath from '@/assets/TamannaAnand_Resume.pdf';
 
 </script>
