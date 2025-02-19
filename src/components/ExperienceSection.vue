@@ -30,9 +30,8 @@
             <!-- Experiences Section -->
             <div data-aos="flip-right" >
                 <h2 class="text-4xl font-bold text-white mb-8 lg:mb-12 text-center mt-4">
-                    My Experiences
+                    Experiences
                 </h2>
-
                 <div class="space-y-6">
                     <div v-for="element in experiences" :key="element.id"
                         class="flex items-center rounded-xl p-5 bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary transition-all duration-300">

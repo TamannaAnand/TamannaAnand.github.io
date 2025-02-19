@@ -6,11 +6,12 @@
         <div class="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 xl:px-16">
             <div data-aos="flip-right" >
                 <h2 class="text-4xl font-bold text-white text-center md:mt-0">
-                    My Education
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">My</span>
+                    Education
                 </h2>
                 <div class="space-y-8 py-8">
                     <div v-for="element in education" :key="element.id"
-                    class="flex items-center rounded-xl p-5 bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary transition-all duration-300 !important">
+                    class="flex items-center rounded-xl p-5 bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary transition-all duration-300">
                         <div class="w-1/4">
                             <img src="https://img.icons8.com/ios-glyphs/60/ffffff/graduation-cap--v1.png" alt="graduation-cap">
                         </div>
@@ -27,12 +28,14 @@
 
             <div class="mt-4 md:mt-0 text-left flex flex-col z-10 h-full" data-aos="flip-right">
                 <h2 class="text-4xl font-bold text-white text-center">
-                    More About 
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Me</span>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Skills</span>
                 </h2>
-                <p class="text-base text-center lg:text-lg py-10 md:py-20">
-                    My education combines analytical expertise and technical proficiency, forming a strong foundation for a career in software development. At Dalhousie University, I developed critical thinking and problem-solving skills through a Bachelor of Science with a minor in Microbiology and Immunology. Currently, in the Full Stack Application Development program at NSCC, I am learning front-end and back-end technologies, secure application design, and software testing. This blend of skills positions me to create innovative, reliable, and user-focused software solutions.
-                </p>
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-6">
+                    <div v-for="skill in skills" :key="skill.id" class="flex flex-col items-center transition-all duration-300 hover:scale-105">
+                        <img :src="skill.img" :alt="skill.name" class="w-16 h-16">
+                        <p class="mt-2 text-lg">{{ skill.name }}</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -53,4 +56,12 @@ const education = ref([
         Year: '2017 - 2021'
     }
 ]);
+
+const skills = ref([
+    {
+        id: 1,
+        name:'Communication',
+        img: 'https://img.icons8.com/?size=100&id=11881&format=png&color=000000'
+    }
+])
 </script>
