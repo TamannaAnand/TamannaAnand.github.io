@@ -8,7 +8,8 @@
             </span>
         </div>
 
-        <div class="md:grid md:grid-cols-2 gap-8 items-center md:py-12 px-6 xl:gap-16 xl:px-16">
+        <!-- Updated grid layout for better alignment -->
+        <div class="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 xl:px-16">
             <!-- Tools & Technologies -->
             <div data-aos="flip-right" class="text-center flex flex-col z-10 h-full w-full md:w-[80%]">
                 <h2 class="text-4xl font-bold text-white mb-6">
@@ -18,7 +19,6 @@
                 </h2>
 
                 <!-- Skills Grid -->
-                 <!-- removed progress bars and added imgs for each technology. Included hover animation as well -->
                 <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-6">
                     <div v-for="skill in skills" :key="skill.id" class="flex flex-col items-center transition-all duration-300 hover:scale-105">
                         <img :src="skill.img" :alt="skill.name" class="w-16 h-16">
@@ -28,15 +28,15 @@
             </div>
 
             <!-- Experiences Section -->
-            <div data-aos="flip-right" >
-                <h2 class="text-4xl font-bold text-white mb-8 lg:mb-12 text-center mt-4">
+            <div class="flex flex-col z-10 h-full w-full" data-aos="flip-right">
+                <h2 class="text-4xl font-bold text-white mb-6 text-center">
                     Experiences
                 </h2>
                 <div class="space-y-6">
                     <div v-for="element in experiences" :key="element.id"
                         class="flex items-center rounded-xl p-5 bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary transition-all duration-300">
                         <div class="w-1/5 flex justify-center">
-                            <img src="https://img.icons8.com/ios-filled/100/ffffff/lawyer.png" alt="icon" class="w-12 h-12">
+                            <img src="https://img.icons8.com/?size=100&id=123839&format=png&color=ffffff" alt="icon" class="w-12 h-12">
                         </div>
                         <div class="w-4/5 pl-4">
                             <h3 class="text-2xl font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
@@ -51,7 +51,6 @@
         </div>
     </section>
 </template>
-
 <script setup>
 import { ref } from 'vue';
 
@@ -69,6 +68,9 @@ const skills = ref([
     { id: 11, name: 'Express.js', img: 'https://img.icons8.com/?size=100&id=WNoJgbzDr3i2&format=png&color=000000' },
     { id: 12, name: 'Microsoft SQL Server', img: 'https://img.icons8.com/?size=100&id=laYYF3dV0Iew&format=png&color=000000' },
     { id: 13, name: 'PowerShell', img: 'https://img.icons8.com/?size=100&id=FwaVI1qCE7hQ&format=png&color=000000' },
+    { id: 14, name: 'Agile', img: 'https://img.icons8.com/?size=100&id=zlH55omVdm3v&format=png&color=000000' },
+    { id: 15, name: 'Jira', img: 'https://img.icons8.com/?size=100&id=oROcPah5ues6&format=png&color=000000' },
+    
 ]);
 
 const experiences = ref([

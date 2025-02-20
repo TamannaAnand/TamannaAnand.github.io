@@ -26,10 +26,13 @@
                 </div>
             </div>
 
-            <div class="mt-4 md:mt-0 text-left flex flex-col z-10 h-full" data-aos="flip-right">
-                <h2 class="text-4xl font-bold text-white text-center">
+            <div data-aos="flip-right" class="text-center flex flex-col z-10 h-full w-full">
+                <h2 class="text-4xl font-bold text-white mb-6">
+                    Personal
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Skills</span>
                 </h2>
+                <!-- Skills Grid -->
+
                 <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-6">
                     <div v-for="skill in skills" :key="skill.id" class="flex flex-col items-center transition-all duration-300 hover:scale-105">
                         <img :src="skill.img" :alt="skill.name" class="w-16 h-16">
@@ -60,8 +63,29 @@ const education = ref([
 const skills = ref([
     {
         id: 1,
-        name:'Communication',
-        img: 'https://img.icons8.com/?size=100&id=11881&format=png&color=000000'
-    }
+        name:'Stakeholder Communication',
+        img: 'https://img.icons8.com/?size=100&id=IVtLRVtgqH1u&format=png&color=000000'
+    },
+    {
+        id: 2,
+        name:'Project Management',
+        img: 'https://img.icons8.com/?size=100&id=11tClwRPBj0X&format=png&color=000000'
+    },
+    {
+        id: 3,
+        name:'Critical Thinking',
+        img: 'https://img.icons8.com/?size=100&id=tqtACRW82n1P&format=png&color=000000'
+    },
+    {
+        id: 4,
+        name:'Inventory Management',
+        img: 'https://img.icons8.com/?size=100&id=46937&format=png&color=000000'
+    },
+    {
+        id: 5,
+        name:'Teamwork',
+        img: 'https://img.icons8.com/?size=100&id=104316&format=png&color=000000'
+    },
+
 ])
 </script>
