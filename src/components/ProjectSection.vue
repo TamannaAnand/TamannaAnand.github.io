@@ -85,6 +85,7 @@ import PlatformImage from "@/assets/PhaserGame.png";
 import firstPortfolioImg from "@/assets/staticPortfolio.png";
 
 const projects = ref([
+  //links to chinook and hackathon projects added 
   {
     id: 1,
     category: "Back-end",
