@@ -29,7 +29,7 @@
 
             <!-- Experiences Section -->
             <div class="flex flex-col z-10 h-full w-full" data-aos="flip-right">
-                <h2 class="text-4xl font-bold text-white mb-6 text-center">
+                <h2 class="text-4xl font-bold text-white mb-6 text-center mt-10">
                     Experiences
                 </h2>
                 <div class="space-y-6">

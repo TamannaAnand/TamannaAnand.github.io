@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            <div data-aos="flip-right" class="text-center flex flex-col z-10 h-full w-full">
+            <div data-aos="flip-right" class="text-center flex flex-col z-10 h-full w-full sm:py-8 px-4">
                 <h2 class="text-4xl font-bold text-white mb-6">
                     Personal
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Skills</span>
