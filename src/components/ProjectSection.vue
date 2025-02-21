@@ -1,14 +1,14 @@
 <template>
   <section class="text-white mt-20" id="projects">
     <div class="px-4 xl:pl-16">
-      <div class=" md:flex md:justify-between xl:pr-16">
+      <div class=" md:flex md:justify-between xl:pr-16" data-aos="fade-down">
         <h2 class="text-4xl font-bold text-center text-white md:m-[auto]">Latest Projects</h2>
       </div>
       <ul
         class="px-4 sm:py-16 xl:pr-16 grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
         data-aos="fade-right"
       >
-        <div v-for="project in filteredProjects" :key="project.id">
+        <div v-for="project in filteredProjects" :key="project.id" data-aos="fade-up">
           <div
             class="h-52 md:h-[24rem] rounded-t-xl relative group"
             :style="{

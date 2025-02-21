@@ -1,5 +1,5 @@
 <template>
-  <section class="relative w-full h-[80vh] flex items-center" data-aos="zoom-in-up">
+  <section class="relative w-full h-[80vh] flex items-center" data-aos="fade-up">
     <!-- Gradient Background Effect -->
     <div class="absolute top-0 inset-x-0 h-64 flex items-start">
       <div class="h-24 w-2/3 bg-gradient-to-br from-[#570cac] blur-2xl opacity-40"></div>

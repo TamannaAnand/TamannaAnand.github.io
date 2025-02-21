@@ -1,5 +1,5 @@
 <template>
-    <section class="text-white mt-20" id="about">
+    <section class="text-white mt-20" id="about" data-aos="fade-down">
         <div class="px-4 xl:pl-16">
             <h2 class="text-4xl font-bold mt-4 text-center">
                 <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
