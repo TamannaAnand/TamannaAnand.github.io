@@ -6,12 +6,11 @@
         <div class="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 xl:px-16">
             <div data-aos="flip-right" >
                 <h2 class="text-4xl font-bold text-white text-center md:mt-0">
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">My</span>
                     Education
                 </h2>
                 <div class="space-y-8 py-8">
                     <div v-for="element in education" :key="element.id"
-                    class="flex items-center rounded-xl p-5 bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary transition-all duration-300">
+                    class="flex items-center rounded-xl p-5 bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary transition-all duration-300 hover:scale-105">
                         <div class="w-1/4">
                             <img src="https://img.icons8.com/ios-glyphs/60/ffffff/graduation-cap--v1.png" alt="graduation-cap">
                         </div>

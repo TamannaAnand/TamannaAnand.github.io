@@ -34,7 +34,7 @@
                 </h2>
                 <div class="space-y-6">
                     <div v-for="element in experiences" :key="element.id"
-                        class="flex items-center rounded-xl p-5 bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary transition-all duration-300">
+                        class="flex items-center rounded-xl p-5 bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary transition-all duration-300 hover:scale-105">
                         <div class="w-1/5 flex justify-center">
                             <img src="https://img.icons8.com/?size=100&id=123839&format=png&color=ffffff" alt="icon" class="w-12 h-12">
                         </div>

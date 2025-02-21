@@ -8,30 +8,25 @@
                 Me
             </h2>
         </div>
-        <div class="py-8 px-4 sm:py-16 grid grid-cols-1 gap-8 sm:grid-cols-2 md:gap-10 lg:gap-16 lg:grid-cols-3">
+        <div class="py-8 px-4 sm:py-16 grid grid-cols-1 gap-8 sm:grid-cols-2 md:gap-5 lg:gap-16 lg:grid-cols-3">
             <div v-for="item in about" :key="item.id" data-aos="fade-up"
-                 class="px-6 py-8 rounded-xl bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary hover:shadow-xl transition-all duration-300"
+                 class="flex flex-col items-center text-center p-6 bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] rounded-xl transition-all duration-300 hover:scale-105 hover:border-primary hover:shadow-primary/50 hover:shadow-lg"
             >
-                <div class="flex justify-center">
-                    <div class="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-r from-primary to-secondary p-3">
-                        <img :src="item.icon" alt="item-icon" class="w-16 h-16">
-                    </div>
+                <div class="w-16 h-16 flex justify-center items-center bg-primary rounded-full mb-4 transition-all duration-300 hover:scale-110 hover:bg-gradient-to-r from-primary to-secondary">
+                    <img :src="item.icon" :alt="item.name" class="w-10 h-10">
                 </div>
-                <div class="text-center mt-6">
-                    <h3 class="text-lg font-semibold uppercase text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary lg:text-xl">
-                        {{ item.name }}
-                    </h3>
-                    <p class="text-gray-300 mt-4 text-lg md:text-lg leading-relaxed">
-                        {{ item.description }}
-                    </p>
-                </div>
+                <h3 class="text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mb-2">
+                    {{ item.name }}
+                </h3>
+                <p class="text-gray-400 text-lg">{{ item.description }}</p>
             </div>
         </div>
     </section>
 </template>
+
 <script setup>
-   import { ref } from 'vue'; 
-   const about = ref([
+import { ref } from 'vue'; 
+const about = ref([
     {
         id: 1,
         icon: "https://img.icons8.com/ffffff/ios-filled/100/cat-footprint.png",
@@ -50,5 +45,5 @@
         name:'Personable Pal',
         description:'I’m a personable pal dedicated to helping others. Whether it’s offering a listening ear or practical support, friends know they can rely on me in tough times. I love uplifting those around me and being a positive force in their lives.'
     }
-   ])
+])
 </script>
