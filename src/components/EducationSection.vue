@@ -4,11 +4,11 @@
             <div class="h-24 w-64 bg-gradient-to-br from-primary via-secondary blur-2xl to-[#570cac] opacity-20"></div>
         </div>
         <div class="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 xl:px-16">
-            <div data-aos="flip-right" >
+            <div data-aos="fade-down" >
                 <h2 class="text-4xl font-bold text-white text-center md:mt-0">
                     Education
                 </h2>
-                <div class="space-y-8 py-8">
+                <div class="space-y-8 py-8" data-aos="fade-up">
                     <div v-for="element in education" :key="element.id"
                     class="flex items-center rounded-xl p-5 bg-[#1d1e2f] shadow-lg border border-[#2a2b3d] hover:border-primary transition-all duration-300 hover:scale-105">
                         <div class="w-1/4">
@@ -25,14 +25,14 @@
                 </div>
             </div>
 
-            <div data-aos="flip-right" class="text-center flex flex-col z-10 h-full w-full sm:py-8 px-4">
+            <div data-aos="fade-down" class="text-center flex flex-col z-10 h-full w-full sm:py-8 px-4">
                 <h2 class="text-4xl font-bold text-white mb-6">
                     Personal
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Skills</span>
                 </h2>
                 <!-- Skills Grid -->
 
-                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-6">
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-6" data-aos="fade-up">
                     <div v-for="skill in skills" :key="skill.id" class="flex flex-col items-center transition-all duration-300 hover:scale-105">
                         <img :src="skill.img" :alt="skill.name" class="w-16 h-16">
                         <p class="mt-2 text-lg">{{ skill.name }}</p>
