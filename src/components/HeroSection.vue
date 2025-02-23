@@ -1,5 +1,6 @@
 <template>
   <section class="relative w-full h-[80vh] flex items-center" data-aos="fade-up">
+    <canvas id="floatingParticles" class="absolute top-0 inset-x-0 h-full w-full"></canvas>
     <!-- Gradient Background Effect -->
     <div class="absolute top-0 inset-x-0 h-64 flex items-start">
       <div class="h-24 w-2/3 bg-gradient-to-br from-[#570cac] blur-2xl opacity-40"></div>
@@ -18,7 +19,7 @@
             </span>
           </h1>
           <p class="text-gray-300 pt-6">
-            Detail-oriented and organized individual with a background in scientific research and a passion for solving complex problems. Currently advancing my full-stack development skills at NSCC, focusing on innovative, user-focused solutions. Excited for what’s ahead!
+            I'm a detail-oriented professional with experience in scientific research, project management, and full-stack development. I enjoy working with diverse teams, managing projects with Agile methods, and creating user-centered solutions. I'm passionate about solving complex problems and using technology to build meaningful, impactful solutions.
           </p>
           
           <!-- Buttons -->
@@ -51,11 +52,71 @@
   </section>
 </template>
 <script setup>
+import { onMounted } from 'vue';
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
-//fixed download button on mobile by importing the asset 
 import resumePath from '@/assets/TamannaAnand_Resume.pdf';
 
+// Canvas Particle Animation
+onMounted(() => {
+  const canvas = document.getElementById('floatingParticles');
+  const ctx = canvas.getContext('2d');
+
+  // Resize canvas to fill screen
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  let particles = [];
+
+  class Particle {
+    constructor(x, y) {
+      this.x = x;
+      this.y = y;
+      this.size = Math.random() * 5 + 1;  // Random size between 1 and 6
+      this.speedX = Math.random() * 3 - 1.5;  // Random horizontal speed
+      this.speedY = Math.random() * 3 - 1.5;  // Random vertical speed
+      this.color = `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.7)`;
+    }
+
+    update() {
+      this.x += this.speedX;
+      this.y += this.speedY;
+
+      // Create the effect of particles being generated from the center
+      if (this.size > 0.2) this.size -= 0.1;  // Particle size decreases over time
+
+      // Draw the particle
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = this.color;
+      ctx.fill();
+    }
+  }
+
+  function animateParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);  // Clear canvas for next frame
+
+    // Generate new particles
+    if (particles.length < 100) {
+      particles.push(new Particle(Math.random() * canvas.width, Math.random() * canvas.height));
+    }
+
+    // Update and draw all particles
+    particles.forEach(particle => {
+      particle.update();
+    });
+
+    requestAnimationFrame(animateParticles);  // Keep animating
+  }
+
+  animateParticles();  // Start the animation
+});
 </script>
+
+<style>
+#floatingParticles {
+  z-index: -1;
+}
+</style>
