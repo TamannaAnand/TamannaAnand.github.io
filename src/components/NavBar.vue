@@ -1,7 +1,6 @@
 <template>
   <header class="flex justify-between items-center p-6 bg-opacity-50 z-20">
-    <div class="relative flex items-center">
-    </div>
+    <div class="relative flex items-center"></div>
     <!-- MOBILE TOGGLE BUTTON -->
     <div class="md:hidden z-30">
       <button
@@ -73,7 +72,4 @@ const scrollToSection = (href) => {
     section.scrollIntoView({ behavior: "smooth" });
   }
 };
-
-
-
 </script>
