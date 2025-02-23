@@ -1,8 +1,6 @@
 <template>
   <header class="flex justify-between items-center p-6 bg-opacity-50 z-20">
-    <!-- Animated Canvas Logo - CHATGPT -->
     <div class="relative flex items-center">
-      <!-- <canvas ref="canvas" class="w-16 h-16" @click="triggerFall"></canvas> -->
     </div>
     <!-- MOBILE TOGGLE BUTTON -->
     <div class="md:hidden z-30">
@@ -56,6 +54,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from "vue";
+import { DotLottieVue } from "@lottiefiles/dotlottie-vue";
 
 const menu = ref([
   { name: "About Me", href: "#about" },

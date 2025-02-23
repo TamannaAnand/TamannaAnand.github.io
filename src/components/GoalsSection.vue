@@ -11,8 +11,8 @@
     </div>
 
     <!-- Goals Section -->
-    <div class="container mx-auto px-4 py-12 md:px-8 lg:px-16">
-      <h2 class="text-4xl font-bold text-center mb-8" data-aos="fade-down">
+    <div class="container mx-auto px-4 py-12 md:px-8 lg:px-16" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-center mb-8" >
         My
         <span
           class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary"
@@ -21,7 +21,7 @@
       </h2>
 
       <!-- Carousel -->
-      <Carousel v-bind="carouselConfig" class="full-width-carousel" data-aos="fade-up">
+      <Carousel v-bind="carouselConfig" class="full-width-carousel">
         <Slide v-for="goal in goals" :key="goal.id">
           <div class="goal-card">
             <div class="icon-container">
