@@ -83,11 +83,23 @@ import FrontendImage from "@/assets/frontend_tailwind.png";
 import FrontendApiImage from "@/assets/api.png";
 import PlatformImage from "@/assets/PhaserGame.png";
 import firstPortfolioImg from "@/assets/staticPortfolio.png";
+import snakeGameImage from "@/assets/snake_game.png";
 
 const projects = ref([
   //links to chinook and hackathon projects added 
   {
     id: 1,
+    category: "Python",
+    img: snakeGameImage,
+    title: "Snake Game",
+    description:
+      "A fun, graphical Snake Game built with Python's Turtle module. It features custom images, score tracking, high score saving, and increasing difficulty as the snake grows. Simple controls and smooth gameplay make it an engaging classic arcade experience.",
+    technologies: ["Python", "Turtle"],
+    gitURL: "https://github.com/TamannaAnand/SnakeGame",
+    webURL: "",
+  },
+  {
+    id: 2,
     category: "Back-end",
     img: SafeCampusImage,
     title: "SafeCampus Dashboard",
@@ -98,7 +110,7 @@ const projects = ref([
     webURL: "https://safetysystem-testdeploy.onrender.com/",
   },
   {
-    id: 2,
+    id: 3,
     category: "Back-end",
     img: BackendImage,
     title: "Chinook App Backend Enhancement",
@@ -109,7 +121,7 @@ const projects = ref([
     webURL: "https://chinookapp-5skd.onrender.com",
   },
   {
-    id: 3,
+    id: 4,
     category: "front-end",
     img: FrontendImage,
     title: "Interactive Website built with Advanced CSS Tools",
@@ -120,7 +132,7 @@ const projects = ref([
     webURL: "https://tamannaanand.github.io/AdvancedCSSTechniques/",
   },
   {
-    id: 4,
+    id: 5,
     category: "front-end",
     img: FrontendApiImage,
     title: "3-in-a-Row Puzzle Game",
@@ -131,7 +143,7 @@ const projects = ref([
     webURL: "https://tamannaanand.github.io/3InARowPuzzleGame/",
   },
   {
-    id: 5,
+    id: 6,
     category: "front-end",
     img: PlatformImage,
     title: "2D-Platformer Game",
@@ -142,7 +154,7 @@ const projects = ref([
     webURL: "https://tamannaanand.github.io/PhaserGame/",
   },
   {
-    id: 6,
+    id: 7,
     category: "front-end",
     img: firstPortfolioImg,
     title: "First Portfolio",
