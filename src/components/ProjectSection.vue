@@ -84,11 +84,23 @@ import FrontendApiImage from "@/assets/api.png";
 import PlatformImage from "@/assets/PhaserGame.png";
 import firstPortfolioImg from "@/assets/staticPortfolio.png";
 import snakeGameImage from "@/assets/snake_game.png";
+import weatherflexImage from "@/assets/weatherflex.png";
 
 const projects = ref([
   //links to chinook and hackathon projects added 
   {
     id: 1,
+    category: "Next.js",
+    img: weatherflexImage,
+    title: "Full Stack Application",
+    description:
+      "WeatherFlex Workouts is a full-stack fitness app that offers personalized workout plans based on real-time weather data. It features user authentication, workout tracking, AI-generated exercise suggestions, and premium analytics behind a Stripe-powered payment system. Built with Next.js 14+, Prisma, PostgreSQL, and hosted on Vercel, the app includes a test-mode Stripe integration, allowing users to simulate premium upgrades securely during development.",
+    technologies: ["Next.js", "PostgreSQL", "Tailwind CSS", "Prisma", "Stripe", "Gemini API"],
+    gitURL: "https://github.com/TamannaAnand/webd5015-project-weatherflex-workouts",
+    webURL: "https://webd5015-project-weatherflex-workouts.vercel.app",
+  },
+  {
+    id: 2,
     category: "Python",
     img: snakeGameImage,
     title: "Snake Game",
@@ -99,7 +111,7 @@ const projects = ref([
     webURL: "",
   },
   {
-    id: 2,
+    id: 3,
     category: "Back-end",
     img: SafeCampusImage,
     title: "SafeCampus Dashboard",
@@ -110,7 +122,7 @@ const projects = ref([
     webURL: "https://safetysystem-testdeploy.onrender.com/",
   },
   {
-    id: 3,
+    id: 4,
     category: "Back-end",
     img: BackendImage,
     title: "Chinook App Backend Enhancement",
@@ -121,7 +133,7 @@ const projects = ref([
     webURL: "https://chinookapp-5skd.onrender.com",
   },
   {
-    id: 4,
+    id: 5,
     category: "front-end",
     img: FrontendImage,
     title: "Interactive Website built with Advanced CSS Tools",
@@ -132,7 +144,7 @@ const projects = ref([
     webURL: "https://tamannaanand.github.io/AdvancedCSSTechniques/",
   },
   {
-    id: 5,
+    id: 6,
     category: "front-end",
     img: FrontendApiImage,
     title: "3-in-a-Row Puzzle Game",
@@ -143,7 +155,7 @@ const projects = ref([
     webURL: "https://tamannaanand.github.io/3InARowPuzzleGame/",
   },
   {
-    id: 6,
+    id: 7,
     category: "front-end",
     img: PlatformImage,
     title: "2D-Platformer Game",
@@ -154,7 +166,7 @@ const projects = ref([
     webURL: "https://tamannaanand.github.io/PhaserGame/",
   },
   {
-    id: 7,
+    id: 8,
     category: "front-end",
     img: firstPortfolioImg,
     title: "First Portfolio",
