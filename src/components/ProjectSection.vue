@@ -85,7 +85,7 @@ import PlatformImage from "@/assets/PhaserGame.png";
 import firstPortfolioImg from "@/assets/staticPortfolio.png";
 import snakeGameImage from "@/assets/snake_game.png";
 import weatherflexImage from "@/assets/weatherflex.png";
-import herCompassImage from "@/assets/hercompass.png";
+import herCompassImage from "@assets/her_compass_thumbnail.png";
 
 const projects = ref([
   //links to chinook and hackathon projects added 
